@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 100%;
+    font-family: sans-serif;
+}
+main {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 580px;
+    padding: 10px;
+    margin:  15px auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.205), -1px -1px 10px rgba(0, 0, 0, 0.205);
+}
+
+/*--------------- SCREEN ---------------*/
+.calculator .screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.142);
+    padding: 5px;
+    margin-top: 10px;
+}
+.screen .expression, .screen .answer {
+    color: rgba(0, 0, 0, 0.542);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding-left: 20px;
+    padding-right: 6px;
+    height: 40px;
+    overflow: hidden;
+}
+.screen .answer {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* --------------- buttons---------------- */
+.calculator .buttons-pad {
+    background: rgba(0, 0, 0, 0.026);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 350px;
+    padding: 8px;
+    margin-top: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.155);
+}
+.calculator .buttons-pad .switch-pad {
+    display: grid;
+    grid-template-columns: repeat(2, 65px);
+    column-gap: 55%;
+    
+}
+.calculator .buttons-pad .numbers-operators-pad {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    margin-top: 8px;
+}
+.calculator .buttons-pad .numbers-operators-pad .numbers {
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+    column-gap: 22px;
+    row-gap: 8px;
+}
+.calculator .buttons-pad .numbers-operators-pad .operators {
+    display: grid;
+    row-gap: 8px;
+}
+.calculator .buttons-pad .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.calculator .buttons-pad .switch-pad .on-button {
+    color: red;
+}
+
+.calculator .buttons-pad button {
+    background: white;
+    color: rgba(0, 0, 0, 0.703);
+    font-size: 1.3rem;
+    width: 60px;
+    height: 60px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.235);
+    transition: all .15s ease;
+}
+.calculator .buttons-pad button:hover {
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.377);
+}
+.calculator .buttons-pad button:active {
+    box-shadow: 1px 1px 2px rgba(0, 157, 255, 0.801), -1px -1px 2px rgba(0, 157, 255, 0.801);
+}
+.no-events {
+    pointer-events: none;
+}
