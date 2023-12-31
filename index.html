@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- icons and styles -->
+    <link rel="stylesheet" href="remixicon/remixicon.css">
+    <link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <main>
+        <!-- Arithmetic calculator -->
+        <section >
+            <div class="calculator">
+                <!-- screen -->
+                <div class="screen">
+                    <div id="math-input" class="expression">
+                          
+                    </div>
+                    <div id="math-output" class="answer">
+                      
+                    </div>
+                </div>
+                <!-- buttons pad -->
+                <div class="buttons-pad">
+                    <div class="switch-pad">
+                        <div class="button-container">
+                            <button class="ri-shut-down-line on-button off" data-input="switch"></button>
+                        </div>
+                        <div class="button-container">
+                            <button class="bi-backspace" data-input="backspace"></button>
+                        </div>
+                    </div>
+                    <div class="numbers-operators-pad">
+
+                        <!-- numbers -->
+                        <div class="numbers">
+                            <div class="button-container">
+                                <button class="ri-number-7" data-input="7"></button>
+                            </div>
+                            <div class="button-container">
+                                <button class="ri-number-8" data-input="8"></button>
+                            </div>
+                            <div class="button-container">
+                                <button class="ri-number-9" data-input="9"></button>
+                            </div>
+                            <div class="button-container">
+                                <button class="ri-number-4" data-input="4"></button>
+                            </div>
+                            <div class="button-container">
+                                <button class="ri-number-5" data-input="5"></button>
+                            </div>
+                            <div class="button-container">
+                                <button class="ri-number-6" data-input="6"></button>
+                            </div>
+                            <div class="button-container">
+                                <button class="ri-number-1" data-input="1"></button>
+                            </div>
+                            <div class="button-container">
+                                <button class="ri-number-2" data-input="2"></button>
+                            </div>
+                            <div class="button-container">
+                                <button class="ri-number-3" data-input="3"></button>
+                            </div>
+                            <div class="button-container">
+                                <button class="ri-number-0" data-input="0"></button>
+                            </div>
+                            <div class="button-container">
+                                <button class="bi-dot" data-input="."></button>
+                            </div>
+                            <div class="button-container">
+                                <button class="" data-input="=">=</button>
+                            </div>
+                        </div>
+
+                        <!------------- operators ------------------>
+                        <div class="operators">
+                            <div class="button-container">
+                                <button class="ri-add-fill" data-input=" + "></button>
+                            </div>
+                            <div class="button-container">
+                                <button class="ri-subtract-fill" data-input=" - "></button>
+                            </div>
+                            <div class="button-container">
+                                <button class="ri-close-fill" data-input=" * "></button>
+                            </div>
+                            <div class="button-container">
+                                <button class="ri-divide-fill" data-input=" / "></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
